@@ -1,7 +1,14 @@
 from dataclasses import dataclass
 
-
-@dataclass
+@dataclass(frozen=True)
 class DataIngestionArtifact:
-    trained_file_path:str 
-    test_file_path:str 
+    """
+    Artifact class to store paths of datasets produced by the
+    data ingestion stage of the pipeline.
+    
+    Attributes:
+        train_file_path (str): Path to the training dataset.
+        test_file_path (str): Path to the testing dataset.
+    """
+    train_file_path: str  # Path where the training dataset is stored
+    test_file_path: str   # Path where the testing dataset is stored

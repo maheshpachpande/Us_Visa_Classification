@@ -1,0 +1,15 @@
+# Data manipulation
+pandas==2.2.2
+numpy==1.26.4
+
+# Jupyter / Kernel
+ipykernel==6.29.5
+
+
+# Visualization
+matplotlib==3.9.2
+plotly==5.24.1
+seaborn==0.13.2
+
+# Local package
+-e .

@@ -2,10 +2,10 @@
 
 ## Conda Enviroment
 ```
-- conda create -p venv1 python=3.10 -y
+conda create -p venv1 python=3.10 -y
 ```
 ```
-- conda activate /home/mahesh/Us_Visa_Classification/venv1
+conda activate /home/mahesh/Us_Visa_Classification/venv1
 ```
 
 ## Git commands
@@ -19,15 +19,11 @@ git push origin main
 ```
 
 
-## How to run?
-
-```bash
-conda create -n visa python=3.8 -y
+## Create the setup file
+```
+pip install -e .
 ```
 
-```bash
-conda activate visa
-```
 
 ```bash
 pip install -r requirements.txt

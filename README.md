@@ -1,5 +1,12 @@
 # MLOPs-Production-Ready-Machine-Learning-Project
 
+## Conda Enviroment
+```
+- conda create -p venv1 python=3.10 -y
+```
+```
+- conda activate /home/mahesh/Us_Visa_Classification/venv1
+```
 
 ## Git commands
 

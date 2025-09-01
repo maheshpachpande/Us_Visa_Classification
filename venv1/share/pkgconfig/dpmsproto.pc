@@ -1,0 +1,7 @@
+prefix=/home/mahesh/Us_Visa_Classification/venv1
+includedir=${prefix}/include
+
+Name: DPMSProto
+Description: DPMS extension headers
+Version: 1.2
+Cflags: -I${includedir}

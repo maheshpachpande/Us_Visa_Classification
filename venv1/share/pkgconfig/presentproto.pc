@@ -1,0 +1,7 @@
+prefix=/home/mahesh/Us_Visa_Classification/venv1
+includedir=${prefix}/include
+ 
+Name: PresentProto
+Description: Present extension headers
+Version: 1.4
+Cflags: -I${includedir}

@@ -1,8 +1,8 @@
 import os
 from datetime import date
 
-DATABASE_NAME = "us_visa"
-COLLECTION_NAME = "visa_data"
+DATABASE_NAME = "insurance"
+COLLECTION_NAME = "data"
 MONGODB_URL_KEY = "MONGODB_URL"
 
 PIPELINE_NAME: str = "usvisa"
@@ -16,7 +16,7 @@ FILE_NAME: str = "raw.csv"
 """
 Data Ingestion related constant start with DATA_INGESTION VAR NAME
 """
-DATA_INGESTION_COLLECTION_NAME: str = "visa_data"
+DATA_INGESTION_COLLECTION_NAME: str = "data"
 DATA_INGESTION_DIR_NAME: str = "data_ingestion"
 DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
 DATA_INGESTION_INGESTED_DIR: str = "ingested"

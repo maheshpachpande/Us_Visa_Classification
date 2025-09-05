@@ -11,5 +11,11 @@ matplotlib==3.9.2
 plotly==5.24.1
 seaborn==0.13.2
 
+pymongo[srv]
+certifi
+python-dotenv
+
+
+
 # Local package
 -e .

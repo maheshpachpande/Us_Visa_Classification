@@ -1,6 +1,10 @@
 import os
 from dataclasses import dataclass
 from us_visa.constants import *  # Import all constants
+from dotenv import load_dotenv
+
+# Load variables from .env into environment
+load_dotenv()
 
 # ✅ Training Pipeline Configuration
 @dataclass(frozen=True)  # frozen=True makes it immutable → safer
@@ -15,6 +19,20 @@ class TrainingPipelineConfig:
 
 # Instantiate global config for reuse
 training_pipeline_config: TrainingPipelineConfig = TrainingPipelineConfig()
+
+
+# ----------------- MongoDB Config -----------------
+@dataclass(frozen=True)
+class MongoDBConfig:
+    """Holds MongoDB connection settings."""
+    uri: str = os.getenv("MONGODB_URL") or ""
+    default_db: str = DATABASE_NAME
+
+    def __post_init__(self):
+        if not self.uri:
+            raise ValueError("MongoDB URL is not set in environment variables.")
+
+
 
 
 # ✅ Data Ingestion Configuration

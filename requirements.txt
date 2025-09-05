@@ -14,6 +14,12 @@ seaborn==0.13.2
 pymongo[srv]
 certifi
 python-dotenv
+python-box
+pyarrow
+scikit-learn
+pyyaml
+
+
 
 
 

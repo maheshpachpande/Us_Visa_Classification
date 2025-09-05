@@ -8,10 +8,11 @@ MONGODB_URL_KEY = "MONGODB_URL"
 PIPELINE_NAME: str = "usvisa"
 ARTIFACT_DIR: str = "artifacts"
 
-TRAIN_FILE_NAME: str = "train.csv"
-TEST_FILE_NAME: str = "test.csv"
-FILE_NAME: str = "raw.csv"
+TRAIN_FILE_NAME: str = "train.parquet"
+TEST_FILE_NAME: str = "test.parquet"
+FILE_NAME: str = "raw.parquet"
 
+SCHEMA_FILE_PATH: str = os.path.join("config", "schema.yaml")
 
 """
 Data Ingestion related constant start with DATA_INGESTION VAR NAME

@@ -10,5 +10,6 @@ class DataIngestionArtifact:
         train_file_path (str): Path to the training dataset.
         test_file_path (str): Path to the testing dataset.
     """
+    raw_file_path: str    # Path where raw dataset is stored
     train_file_path: str  # Path where the training dataset is stored
     test_file_path: str   # Path where the testing dataset is stored

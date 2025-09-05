@@ -24,6 +24,10 @@ list_of_files = [
     f"{project_name}/pipline/prediction_pipeline.py",
     f"{project_name}/utils/__init__.py",
     f"{project_name}/utils/main_utils.py",
+    f"{project_name}/data_access/__init__.py",
+    f"{project_name}/data_access/stage_01_data_extractor.py",
+    f"{project_name}/data_access/stage_02_data_cleaner.py",
+    f"{project_name}/data_access/stage_03_data_access_service.py",
     "app.py",
     "requirements.txt",
     "Dockerfile",
@@ -32,7 +36,6 @@ list_of_files = [
     "setup.py",
     "config/model.yaml",
     "config/schema.yaml",
-    "pyproject.toml",  # <-- added
 ]
 
 
